@@ -44,6 +44,17 @@
         .animate__animated {
   --animate-duration: 3s;
 }
+.typed-out{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2.5s steps(50, end) forwards;
+  font-size: 1.6rem;
+  
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 10% }
+}
     </style>
 </head>
 <body>
@@ -52,7 +63,8 @@
             <div class="logo animate__animated animate__fadeIn">
                 <h2 class="animate__animated animate__fadeInRight">APART</h2>
                 <h2 class="animate__animated animate__fadeInLeft">MENT</h2>
-                <h2><span class="animate__animated animate__flash">PLUS</span></h2>
+                    <h2><span class="animate__animated animate__flash typed-out">PLUS</span></h2>
+                
             </div>
         </div>
     </section>
